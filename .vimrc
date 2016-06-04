@@ -35,6 +35,9 @@ Plugin 'tpope/vim-fugitive'
 "Powerline
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+"Use VIM bindings within VIM and tmux
+Plugin 'christoomey/vim-tmux-navigator'
+
 "All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
