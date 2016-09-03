@@ -91,9 +91,3 @@ source $ZSH/oh-my-zsh.sh
 
 # COLOUR
 alias ls='ls -l --color=auto'
-
-# Set up virtual env wrapper directories
-export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
-source /usr/local/bin/virtualenvwrapper.sh
