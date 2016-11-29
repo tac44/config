@@ -49,7 +49,7 @@ export ZSH=/home/tom/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pep8 python tmux)
+plugins=(git pep8 python)
 
 # User configuration
 
@@ -82,12 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# tmux autostart
- ZSH_TMUX_AUTOSTART=true
-
-# tmux autoquit
- ZSH_TMUX_AUTOQUIT=true 
 
 # COLOUR
 alias ls='ls -l --color=auto'
