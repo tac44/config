@@ -1,0 +1,42 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda6
+UUID=f3b9cfef-e712-4432-bbfa-78a42a4a7b94	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sda7
+UUID=a1063b8f-a36f-4150-9f34-04fd867b98b2	/home     	ext4      	rw,relatime,data=ordered	0 2
+
+# /dev/sda2
+UUID=021D-6DE2      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
+# /dev/sda5
+UUID=c1b11339-748f-4159-af8b-9e81458e7859	none      	swap      	defaults  	0 0
+
+# /dev/sdb1
+UUID=A64C644B4C6417F7	/vault		ntfs-3g		defaults,rw	0	0
+
+# Nastradamus dev
+Nastradamus:/mnt/storage/dev	/mnt/dev	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+
+# Nastradamus film
+Nastradamus:/mnt/storage/film	/mnt/film	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+
+# Nastradamus git
+Nastradamus:/mnt/storage/git	/mnt/git	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+
+# Nastradamus music
+Nastradamus:/mnt/storage/music	/mnt/music	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+
+# Nastradamus os
+Nastradamus:/mnt/storage/os	/mnt/os		nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+
+# Nastradamus pictures
+Nastradamus:/mnt/storage/pictures	/mnt/pictures	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+
+# Nastradamus tv
+Nastradamus:/mnt/storage/tv	/mnt/tv		nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+
+# Nastradamus xfer
+Nastradamus:/mnt/storage/xfer	/mnt/xfer	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
