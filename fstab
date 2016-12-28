@@ -18,25 +18,25 @@ UUID=c1b11339-748f-4159-af8b-9e81458e7859	none      	swap      	defaults  	0 0
 UUID=A64C644B4C6417F7	/vault		ntfs-3g		defaults,rw	0	0
 
 # Nastradamus dev
-Nastradamus:/mnt/storage/dev	/mnt/dev	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+tom@Nastradamus:/mnt/storage/dev	/mnt/dev	fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
 
 # Nastradamus film
-Nastradamus:/mnt/storage/film	/mnt/film	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
-
-# Nastradamus git
-Nastradamus:/mnt/storage/git	/mnt/git	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
-
-# Nastradamus music
-Nastradamus:/mnt/storage/music	/mnt/music	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
-
-# Nastradamus os
-Nastradamus:/mnt/storage/os	/mnt/os		nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
-
-# Nastradamus pictures
-Nastradamus:/mnt/storage/pictures	/mnt/pictures	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+tom@Nastradamus:/mnt/storage/film	/mnt/film	fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
 
 # Nastradamus tv
-Nastradamus:/mnt/storage/tv	/mnt/tv		nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+tom@Nastradamus:/mnt/storage/tv		/mnt/tv		fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
+
+# Nastradamus git
+tom@Nastradamus:/mnt/storage/git	/mnt/git	fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
+
+# Nastradamus music
+tom@Nastradamus:/mnt/storage/music	/mnt/music	fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
+
+# Nastradamus os
+tom@Nastradamus:/mnt/storage/os		/mnt/os		fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
+
+# Nastradamus pictures
+tom@Nastradamus:/mnt/storage/pictures	/mnt/pictures	fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
 
 # Nastradamus xfer
-Nastradamus:/mnt/storage/xfer	/mnt/xfer	nfs	rsize=8192,wsize=8192,timeo=14,intr	0	0
+tom@Nastradamus:/mnt/storage/xfer	/mnt/xfer	fuse.sshfs	x-systemd.automount,_netdev,user,idmap=user,transform_symlinks,identityfile=/home/tom/.ssh/nastradamus,allow_other,default_permissions,uid=1000,gid=1000	0	0
