@@ -85,3 +85,5 @@ source $ZSH/oh-my-zsh.sh
 
 # COLOUR
 alias ls='ls -l --color=auto'
+
+export PATH="$HOME/bin:$PATH"
