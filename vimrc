@@ -38,6 +38,11 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 "Use VIM bindings within VIM and tmux
 Plugin 'christoomey/vim-tmux-navigator'
 
+" Typescript compatibility
+Plugin 'leafgarland/typescript-vim'
+Plugin 'quramy/tsuquyomi'
+Plugin 'Shougo/vimproc.vim', {'do' : 'make'}
+
 "All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -76,7 +81,7 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix |
 
 "Full stack development web indentation
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js, *.html, *.css, *.ts
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
@@ -99,6 +104,10 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 "Maps nerd tree to CTRL-N
 map <silent> <C-n> :NERDTreeFocus<CR>
 
+"Enabling tsuquyomi
+let g:tsuquyomi_use_dev_node_module=2
+let g:tsuquyomi_tsserver_path='/home/tom/.npm-global/bin/tsserver'
+
 "python with virtualenv support
 py << EOF
 import os
@@ -109,3 +118,4 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
+autocmd FileType typescript setlocal shiftwidth=2 tabstop=2
