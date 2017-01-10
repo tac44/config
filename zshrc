@@ -51,9 +51,6 @@ export ZSH=/home/tom/.oh-my-zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git pep8 python)
 
-# User configuration
-
- export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
